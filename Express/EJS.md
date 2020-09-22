@@ -2,6 +2,8 @@
 
 EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將邏輯與內容直接嵌入到 HTML 頁面上
 
+---
+
 比較常用到的功能:
 #### <%= code %>
 * 這寫法是將 res.render('index',{...}); 輸出過來的變數當 `值` 來使用。
@@ -16,7 +18,7 @@ EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板
 
 ---
 
-app.js
+### app.js
 ```
 var express = require('express');
 var app = express();
@@ -32,10 +34,12 @@ app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
 });
 ```
+
 * app.set('view engine', 'ejs') 代表 view engine 我們宣告為 `ejs`
 * res.render('index',{...}); 表示渲染 views 資料夾內的 `index.ejs`
 
-views/index.ejs
+
+### views/index.ejs
 ```
 <!DOCTYPE html>
 <html>
@@ -56,6 +60,7 @@ views/index.ejs
 ```
 
 app.js 和 index.ejs 都準備好後，我們就來實測看看，在瀏覽器中輸入 http://127.0.0.1:3000/ ，就可以成功看到 index.ejs 所呈現的畫面。
+
 ![image](https://miro.medium.com/max/991/1*tUC5w4hc97aPH5w7y4F_dQ.png)
 
 ---
