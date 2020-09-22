@@ -1,6 +1,6 @@
 ### EJS
 
-EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將邏輯與內容直接嵌入到 HTML 頁面上
+EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將邏輯與內容直接嵌入到 HTML 頁面上。
 
 ---
 
@@ -59,10 +59,9 @@ app.listen(3000, function() {
 </html>
 ```
 
-app.js 和 index.ejs 都準備好後，我們就來實測看看，在瀏覽器中輸入 http://127.0.0.1:3000/ ，就可以成功看到 index.ejs 所呈現的畫面。
+`app.js` 和 `index.ejs` 都準備好後，在瀏覽器中輸入 http://127.0.0.1:3000/ ，就可以成功看到 index.ejs 所呈現的畫面。
 
 ![image](https://miro.medium.com/max/991/1*tUC5w4hc97aPH5w7y4F_dQ.png)
-
 ---
 
 Reference:
