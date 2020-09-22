@@ -1,3 +1,15 @@
 ### EJS
 
-EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將邏輯與內容直接嵌入到 HTML 頁面上，也就是 EJS 可以讓我們利用 JavaScript 生成 HTML 頁面 。而 EJS 學習上相對簡單，因為它沒有如何組織内容的教條；也没有再造一套迭代和控制流語法。我們只要本身會 HTML 和 JavaScript 即可上手！
+EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將邏輯與內容直接嵌入到 HTML 頁面上
+
+比較常用到的功能:
+#### <%= code %>
+* 這寫法是將 res.render('index',{...}); 輸出過來的變數當 `值` 來使用。
+* 也就是說 <%= game %> 的 game 就是 game:'Final Fantasy VII'，所以這段內容 `<h1><%= game %></h1>` 變成 `<h1>Final Fantasy VII</h1>`。
+
+#### <%- code %>
+* 這寫法是將 res.render('index',{...}); 輸出過來的變數做 `保留字元` 來使用。
+* 也就是說其變數送過來後，會被當作 HTML 語法來使用。因此 `<%- category %>` 變成 `<p><b>Characters:</b></p>`。
+
+#### <% code %>
+* 這寫法是將標籤內的內容，當作程式邏輯來使用，像是 if else 判斷式、for 迴圈。
