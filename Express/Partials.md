@@ -26,10 +26,10 @@ Because partials are still templates, we are going to include them in the `views
 </head>
 <body>
 ```
-note that we have linked to our stylesheet here in the partials/header file, so we can now remove this from our other templates.
+note that we have linked to our `stylesheet` here in the `header.ejs` file, so we can now remove this from our other templates.
 
 #### footer.ejs
-```
+``` ejs
 </body>
 </html>
 ```
@@ -38,7 +38,7 @@ note that we have linked to our stylesheet here in the partials/header file, so 
 
 ### Linking Partials in Templates
 
-```
+``` ejs
 <%- include("partials/header.ejs") %>
 ```
 
