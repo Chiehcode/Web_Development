@@ -14,7 +14,7 @@ Because partials are still templates, we are going to include them in the `views
 ### Partials Samples
 
 #### header.ejs
-```
+``` ejs
 <!DOCTYPE html>
 <html lang="en">
 <head>
