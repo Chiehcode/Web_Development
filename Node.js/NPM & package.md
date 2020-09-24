@@ -9,7 +9,7 @@
 
 * 每個專案的根目錄下面，都有一個 `package.json` 文件，定義了這個專案所需要的各種套件，以及相關的配置資訊（比如名稱、版本...等資訊）。`npm install` 命令根據這個配置文件，自動下載所需的套件，也就是配置項目所需的運行和開發環境。
 
-#### package.json Sample
+#### package.json ample
 ```
 {
 	"name": "Hello World",
