@@ -1,6 +1,6 @@
-### EJS
+### EJS (Embedded Javascript)
 
-EJS 的全名是「Embedded Javascript」，顧名思義就是內嵌式的樣板引擎，可以將`邏輯與內容直接嵌入到 HTML 頁面上`。
+顧名思義就是內嵌式的樣板引擎，可以將`邏輯與內容直接嵌入到 HTML 頁面上`。
 
 ---
 
