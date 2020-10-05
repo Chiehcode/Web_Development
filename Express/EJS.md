@@ -45,6 +45,8 @@ app.listen(3000, function() {
 
 ---
 
+常用的寫法如下:
+
 #### <%= code %>
 * 這寫法是將 res.render('index',{...}); 輸出過來的變數當 `值` 來使用。
 * 也就是說 <%= game %> 的 game 就是 game:'Final Fantasy VII'，所以這段內容 `<h1><%= game %></h1>` 變成 `<h1>Final Fantasy VII</h1>`。
