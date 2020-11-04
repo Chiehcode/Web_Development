@@ -20,6 +20,9 @@ let content = `Hello, my name is ${myName}, my lucky number is ${2*(numA + numB)
 console.log(content);  // "Hello, my name is PJCHENder, my lucky number is 22"
 ```
 
+---
+
+Reference:
 * [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 * [String Template Literals -SUPER USEFUL](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/21935984#questions/12871580)
-* https://pjchender.blogspot.com/2017/01/javascript-es6-template-literalstagged.html
+* [[筆記] JavaScript ES6 中的模版字符串（template literals）和標籤模版（tagged template）](https://pjchender.blogspot.com/2017/01/javascript-es6-template-literalstagged.html)
