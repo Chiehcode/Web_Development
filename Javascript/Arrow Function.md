@@ -1,6 +1,6 @@
 ### Arrow Function
 
-類似 Python 的 Lambda expression
+類似於 Python 的 Lambda expression
 
 #### JavaScript
 ```
