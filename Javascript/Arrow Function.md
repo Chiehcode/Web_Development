@@ -3,7 +3,7 @@
 類似於 Python 的 Lambda expression
 
 #### JavaScript
-```
+``` JavaScript
 //JavaScript function
  function funcName(param) {
   return param + 10;
@@ -14,9 +14,9 @@ const funcName = (param) => param + 2
 ```
 
 #### Python
-```
+``` Python
 #Python function 
- def func_name(param):
+def func_name(param):
       return param + 10
 
 #Python lambda
