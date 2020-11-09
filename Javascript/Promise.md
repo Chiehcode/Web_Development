@@ -4,6 +4,7 @@ Q: Promise 與 Async、Await 有什麼關係？
 
 Promise 是用來優化非同步的語法，而 Async、Await 可以基於 Promise 讓非同步的語法的結構類似於 “同步語言”，更易讀且好管理。
 
+
 非同步的問題
 
 Promise 本身是用來改善 JavaScript 非同步的語法結構。
