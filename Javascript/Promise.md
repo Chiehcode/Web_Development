@@ -1,4 +1,6 @@
 
+The Promise object represents the `eventual completion (or failure)` of an `asynchronous operation` and its resulting value.
+
 
 Q: Promise 與 Async、Await 有什麼關係？
 
