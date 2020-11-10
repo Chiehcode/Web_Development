@@ -41,6 +41,8 @@ numberCondition(999)
   .catch(function(error) { console.log("糟糕，答錯了") })
 ```
 
+---
+
 ### 我知道 Promise 了，那 Async/Await 跟它有什麼關係？
 Promise 因為需要一直使用 `.then()`、`.catch()`，所以後來誕生了 async/await。
 
@@ -62,7 +64,63 @@ function numberCondition(num){
 })()
 ```
 
+---
+
+### Async / Await 是所謂的語法糖衣
+* async/await 是一種新的語法撰寫方式，來處理「非同步事件」
+* async/await 讓非同步的程式碼讀起來更像在寫「同步程式碼」
+* async/await 是用來簡單化和清楚化 Promise Chain 相對複雜的結構
+* async function 回傳的一樣是 Promise 物件，只是針對 promise-based 寫法進行包裝
+
+
+### Async 關鍵字
+async 關鍵字可以放在任意函式以前，這意味者：「我們正宣告一個非同步的函式，且這個函式會回傳一個 Promise 物件」
+```
+// 一般函式
+function getGroupInfo() {
+  return data
+}
+
+// 使用 async 函式
+async function getGroupInfo() {
+  return  data
+}
+```
+
+### Await 關鍵字
+在 async 函式中使用 await 關鍵字意味者：「我們請 JavaScript 等待這個非同步的作業完成，才展開後續的動作」
+
+```
+function getFirstInfo() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('first data')
+    }, 1000);
+  })
+}
+
+function getSecondInfo() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('second data')
+    }, 2000);
+  })
+}
+
+async function getGroupInfo() {
+  // 代表等到第一筆資料回傳後，才印出結果和請求第二筆資料
+  const firstInfo = await getFirstInfo()
+  console.log(firstInfo)
+  // 代表等到第二筆資料回傳後，才印出結果
+  const secondInfo = await getSecondInfo()
+  console.log(secondInfo)
+}
+
+getGroupInfo()
+```
+
 ----
 
 
-https://nijialin.com/2020/06/13/learn-javascript-promise/
+* https://nijialin.com/2020/06/13/learn-javascript-promise/
+* [[筆記] 認識同步與非同步 — Callback + Promise + Async/Await](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E5%BF%83%E5%BE%97-%E8%AA%8D%E8%AD%98%E5%90%8C%E6%AD%A5%E8%88%87%E9%9D%9E%E5%90%8C%E6%AD%A5-callback-promise-async-await-640ea491ea64)
