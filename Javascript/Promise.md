@@ -2,7 +2,7 @@
 
 在寫 Javascript 時一定會看到有套件或是範例有使用到 callback function，在過往的 coding 過程中最擔心的問題就是遇到 Callback Hell，最常見的範例為：
 
-```
+``` Javascript
 doSomething(function(result) {
   doSomethingElse(result, function(newResult) {
     doThirdThing(newResult, function(finalResult) {
@@ -16,7 +16,7 @@ doSomething(function(result) {
 
 ### Promise 介紹
 * The Promise object represents the `eventual completion (or failure)` of an `asynchronous operation` and its resulting value.
-* Promise 是 Javascript 的非同步運算的物件，並且包含 `resolve(成功)`、`reject(失敗)`、`pending(處理中)` 三種狀態。
+* Promise 是 Javascript 的 [非同步運算](https://github.com/Chiehcode/Web_Development/blob/master/Javascript/%E5%90%8C%E6%AD%A5%E8%88%87%E9%9D%9E%E5%90%8C%E6%AD%A5.md) 的物件，並且包含 `resolve(成功)`、`reject(失敗)`、`pending(處理中)` 三種狀態。
 
 ![image](https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg)
 
@@ -46,7 +46,7 @@ numberCondition(999)
 ### 我知道 Promise 了，那 Async/Await 跟它有什麼關係？
 Promise 因為需要一直使用 `.then()`、`.catch()`，所以後來誕生了 async/await。
 
-```
+``` Javascript
 function numberCondition(num){
   let result = new Promise(function(resolve, reject){
     if(num === 0){
@@ -75,7 +75,8 @@ function numberCondition(num){
 
 ### Async 關鍵字
 async 關鍵字可以放在任意函式以前，這意味者：「我們正宣告一個非同步的函式，且這個函式會回傳一個 Promise 物件」
-```
+
+``` Javascript
 // 一般函式
 function getGroupInfo() {
   return data
@@ -90,7 +91,7 @@ async function getGroupInfo() {
 ### Await 關鍵字
 在 async 函式中使用 await 關鍵字意味者：「我們請 JavaScript 等待這個非同步的作業完成，才展開後續的動作」
 
-```
+``` Javascript
 function getFirstInfo() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -121,6 +122,6 @@ getGroupInfo()
 
 ----
 
-
+Reference:
 * https://nijialin.com/2020/06/13/learn-javascript-promise/
 * [[筆記] 認識同步與非同步 — Callback + Promise + Async/Await](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E5%BF%83%E5%BE%97-%E8%AA%8D%E8%AD%98%E5%90%8C%E6%AD%A5%E8%88%87%E9%9D%9E%E5%90%8C%E6%AD%A5-callback-promise-async-await-640ea491ea64)
