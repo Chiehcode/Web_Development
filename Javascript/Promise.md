@@ -18,7 +18,7 @@ doSomething(function(result) {
 * The Promise object represents the `eventual completion (or failure)` of an `asynchronous operation` and its resulting value.
 * Promise 是 Javascript 的非同步運算的物件，並且包含 `resolve(成功)`、`reject(失敗)`、`pending(處理中)` 三種狀態。
 
-!image[https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg]
+![image](https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg)
 
 
 * 主要提供了 `.then()` 以及 `.catch()` 方法讓使用者可以做 Promise Chain 去串聯方法，它的用意是讓之前的 Chain 在做完之後去執行接下來的事情。
