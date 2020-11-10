@@ -123,5 +123,5 @@ getGroupInfo()
 ----
 
 Reference:
-* https://nijialin.com/2020/06/13/learn-javascript-promise/
+* [【Javascript】你知道你常用的 Promise 嗎?](https://nijialin.com/2020/06/13/learn-javascript-promise/)
 * [[筆記] 認識同步與非同步 — Callback + Promise + Async/Await](https://medium.com/%E9%BA%A5%E5%85%8B%E7%9A%84%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%AE%B6%E7%AD%86%E8%A8%98/%E5%BF%83%E5%BE%97-%E8%AA%8D%E8%AD%98%E5%90%8C%E6%AD%A5%E8%88%87%E9%9D%9E%E5%90%8C%E6%AD%A5-callback-promise-async-await-640ea491ea64)
